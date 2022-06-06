@@ -42,17 +42,10 @@ class Saxon extends Soldier {
     return `A Saxon has died in combat`;
   }
 
-  attack() {}
+  attack() {
+    return this.strength;
+  }
 }
-// ### Iteration 3: Saxon
-
-// A `Saxon` is a weaker kind of `Soldier`. Unlike a `Viking`, a `Saxon` has no name. Their `receiveDamage()` method will also be different than the original `Soldier` version.
-
-// Modify the `Saxon`, constructor function, have it inherit from `Soldier` and re-implement the `receiveDamage()` method for `Saxon`.
-
-// #### inheritance
-
-// - `Saxon` should extend `Soldier`
 
 // #### class
 
