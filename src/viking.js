@@ -8,12 +8,30 @@ class Soldier {
     return this.strength;
   }
   receiveDamage(theDamage) {
-   this.health = this.health - theDamage; //should remove the received damage from the health property
+    this.health = this.health - theDamage; //should remove the received damage from the health property
   }
 }
 // Viking
-class Viking {}
-ñjskjsd
+class Viking extends Soldier {
+  constructor(name, health, strenght) {
+    super(health, strenght);
+    this.name = name;
+  }
+
+  receiveDamage(theDamage) {
+    this.health -= theDamage;
+    if (this.health <= 0) {
+      return `${this.name} has died in act of combat`;
+    }
+    return `${this.name} has received ${theDamage} points of damage`;
+  }
+
+  battleCry() {
+    return 'Odin Owns You All';
+  }
+}
+
+//
 // Saxon
 class Saxon {}
 
