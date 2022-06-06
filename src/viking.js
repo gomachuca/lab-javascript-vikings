@@ -53,22 +53,6 @@ class Saxon extends Soldier {
 
 // #### `attack()` method
 
-// This method should be **inherited** from `Soldier`, no need to re-implement it.
-
-// - should be a function
-// - should receive **0 arguments**
-// - should return **the `strength` property of the `Saxon`**
-
-// #### `receiveDamage()` method
-
-// This method needs to be **re-implemented** for `Saxon` because the `Saxon` version needs to have different return values.
-
-// - should be a function
-// - should receive **1 argument** (the damage)
-// - should remove the received damage from the `health` property
-// - **if the Saxon is still alive**, it should return **_"A Saxon has received DAMAGE points of damage"_**
-// - **if the Saxon dies**, it should return **_"A Saxon has died in combat"_**
-
 // War
 class War {}
 
@@ -77,3 +61,8 @@ class War {}
 if (typeof module !== 'undefined') {
   module.exports = { Soldier, Viking, Saxon, War };
 }
+// addViking(){}
+// addSaxon(){}
+// vikingAttack(){}
+// saxonAttack(){}
+// showStatus(){}
